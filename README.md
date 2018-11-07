@@ -177,3 +177,21 @@ class EmotionalFaceView(context: Context?, attrs: AttributeSet?) : View(context,
 
 </RelativeLayout>
 ```
+# attrs.xml
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EmotionalFaceView">
+        <attr name="faceColor" format="color"/>
+        <attr name="eyesColor" format="color" />
+        <attr name="mouthColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="state" format="enum">
+            <enum name="happy" value="0"/>
+            <enum name="sad" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
+```
+
